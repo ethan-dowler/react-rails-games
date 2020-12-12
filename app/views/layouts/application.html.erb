@@ -11,6 +11,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <section class="Notification">
+      <p class="Notification-notice"><%= notice %></p>
+      <p class="Notification-alert"><%= alert %></p>
+    </section>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
