@@ -1,5 +1,5 @@
 {
-  "name": "react-tut",
+  "name": "react-rails-games",
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.12.10",
