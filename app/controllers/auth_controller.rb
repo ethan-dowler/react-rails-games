@@ -6,7 +6,7 @@ class AuthController < ApplicationController
 protected
 
   def authenticate_request!
-    redirect_to login_index_path and return unlessuser_id_in_cookie?
+    redirect_to login_index_path and return unless user_id_in_cookie?
 
     @current_user = User.find(auth_token[:user_id])
   rescue JWT::VerificationError, JWT::DecodeError
