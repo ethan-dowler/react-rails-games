@@ -1,0 +1,22 @@
+<h1>
+  Login Form
+</h1>
+
+<%# TODO: make this form work %>
+<%= form_with url: login_index_path, local: true, class: "LoginForm" do |form| %>
+  <div class="LoginForm-email">
+    <label for="email">
+      Email
+    </label>
+    <%= form.email_field :email %>
+  </div>
+
+  <div class="LoginForm-password">
+    <label for="password">
+      Password
+    </label>
+    <%= form.password_field :password %>
+  </div>
+
+  <%= form.submit "Login" %>
+<% end %>
