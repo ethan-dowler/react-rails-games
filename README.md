@@ -1,4 +1,4 @@
-# React Rails Games
+# React Rails Platform
 
 **Install Dependencies**
 
